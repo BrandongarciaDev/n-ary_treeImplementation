@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="750.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
+   <children>
+      <Pane prefHeight="757.0" prefWidth="1400.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Pane prefHeight="756.0" prefWidth="502.0" style="-fx-background-color: #219ebc;">
+               <children>
+                  <Label layoutX="101.0" layoutY="41.0" text="Bienvenido" textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima" size="56.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="150.0" prefHeight="93.0" prefWidth="352.0" text="Obtén un diagnostico medico personalizado, donde te indicaremos que enfermedad común es la que padeces." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="321.0" prefHeight="107.0" prefWidth="217.0" text="* Diagnostico oportuno         * Receta de medicamentos     * Historial medico" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="registerButton" onAction="#openRegister" layoutX="137.0" layoutY="636.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFF;" text="Registrarse">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+
+               </children></Pane>
+            <ImageView fitHeight="442.0" fitWidth="622.0" layoutX="639.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginImage.jpg" />
+               </image>
+            </ImageView>
+            <TextField layoutX="835.0" layoutY="444.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu usuario" />
+            <TextField layoutX="835.0" layoutY="523.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu contraseña" />
+            <Button layoutX="852.0" layoutY="636.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Iniciar Sesión" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+
+</VBox>

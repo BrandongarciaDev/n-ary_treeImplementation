@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="750.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
+   <children>
+      <Pane prefHeight="752.0" prefWidth="1400.0" style="-fx-background-color: #fff;">
+         <children>
+            <Pane prefHeight="101.0" prefWidth="1400.0" style="-fx-background-color: #219ebc;">
+               <children>
+                  <Label layoutX="673.0" layoutY="32.0" text="Ingresa los siguientes datos para completar el registro" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="23.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Label layoutX="45.0" layoutY="139.0" text="Nombre">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="45.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu nombre" />
+            <Label layoutX="413.0" layoutY="139.0" text="Apellido paterno">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="413.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu apellido paterno" />
+            <Label layoutX="809.0" layoutY="139.0" text="Apellido materno">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="809.0" layoutY="170.0" prefWidth="278.0" promptText="Ingresa tu apellido materno" />
+            <Label layoutX="45.0" layoutY="233.0" text="Fecha de nacimiento">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="45.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Fecha de nacimiento" />
+            <Label layoutX="45.0" layoutY="342.0" text="Estatura">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="43.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu estatura">
+
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <Float fx:value="1.50" />
+                     <Float fx:value="1.60" />
+                     <Float fx:value="1.70" />
+                     <Float fx:value="1.80" />
+                  </FXCollections>
+               </items>
+
+            </ComboBox>
+            <Label layoutX="413.0" layoutY="342.0" text="Tipo de sangre">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="413.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el tipo de sangre">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="O NEGATIVO" />
+                     <String fx:value="O POSITIVO" />
+                     <String fx:value="A NEGATIVO" />
+                     <String fx:value="A POSITIVO" />
+                     <String fx:value="B POSITIVO" />
+                     <String fx:value="B NEGATIVO" />
+                     <String fx:value="AB NEGATIVO" />
+                     <String fx:value="AB POSITIVO" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label layoutX="413.0" layoutY="233.0" text="Telefono">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="413.0" layoutY="278.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu numero de telefono" />
+            <Label layoutX="809.0" layoutY="233.0" text="Peso">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="801.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu peso">
+              <items>
+                 <FXCollections fx:factory="observableArrayList">
+                    <Integer fx:value="40" />
+                    <Integer fx:value="50" />
+                    <Integer fx:value="60" />
+                    <Integer fx:value="70" />
+                    <Integer fx:value="80" />
+                    <Integer fx:value="90" />
+                    <Integer fx:value="100" />
+                    <Integer fx:value="110" />
+                 </FXCollections>
+              </items>
+            </ComboBox>
+            <Button fx:id="addUser" onAction="#addUser" layoutX="1158.0" layoutY="666.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Registrarse" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label  layoutX="809.0" layoutY="342.0" text="Correo electronico">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="correoElectronico" layoutX="809.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu correo electronico" />
+            <Label  layoutX="45.0" layoutY="454.0" text="Contraseña">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="contrasena" layoutX="45.0" layoutY="496.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu contraseña" />
+         </children></Pane>
+   </children>
+</VBox>
