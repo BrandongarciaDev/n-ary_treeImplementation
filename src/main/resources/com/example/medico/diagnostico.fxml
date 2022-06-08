@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.Diagnosis">
+   <children>
+      <HBox layoutX="-325.0" layoutY="-22.0" prefHeight="100.0" prefWidth="200.0" />
+      <Pane layoutX="-12.0" prefHeight="465.0" prefWidth="791.0">
+         <children>
+            <Label fx:id="diagnosis" layoutX="23.0" layoutY="130.0" prefHeight="47.0" prefWidth="470.0" text="Resultado" textFill="RED">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font></Label>
+            <Pane prefHeight="84.0" prefWidth="797.0" style="-fx-background-color: #219ebc;">
+               <children>
+                  <Label layoutX="329.0" layoutY="19.0" text="Resultado" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="29.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Label layoutX="23.0" layoutY="96.0" text="Enfermedad">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="499.0" layoutY="96.0" text="Medicamentos">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="22.0" />
+               </font>
+            </Label>
+            <ListView fx:id="medicine_view" editable="true" layoutX="403.0" layoutY="132.0" prefHeight="94.0" prefWidth="357.0" />
+            <Label layoutX="317.0" layoutY="242.0" text="Caracteristicas">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="22.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="67.0" layoutY="278.0" prefHeight="156.0" prefWidth="664.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

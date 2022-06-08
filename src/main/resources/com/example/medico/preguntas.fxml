@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
@@ -29,17 +30,30 @@
                         <Font name="Lucida Sans Unicode" size="24.0" />
                      </font></RadioButton>
                </children></Pane>
-            <ProgressBar layoutX="204.0" layoutY="147.0" prefHeight="18.0" prefWidth="1014.0" progress="0.0" />
+            <ProgressBar layoutX="204.0" layoutY="147.0" prefHeight="18.0" prefWidth="1014.0" progress="0.8" style="-fx-background-color: #fb8500; -fx-background-color: #fb8500;" />
             <Circle fill="#fb8500" layoutX="215.0" layoutY="156.0" radius="33.0" stroke="WHITE" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="722.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="480.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="1191.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="937.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="632.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="1033.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="828.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
             <Button fx:id="questionButton" layoutX="1158.0" layoutY="666.0" mnemonicParsing="false" onAction="#nextProcess" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Siguiente" textFill="WHITE">
                <font>
                   <Font name="Lucida Sans Unicode" size="18.0" />
                </font></Button>
-            <Pane layoutX="14.0" layoutY="8.0" prefHeight="102.0" prefWidth="326.0" style="-fx-background-radius: 30px; -fx-border-radius: 80px; -fx-background-color: #fb8500;" />
+            <Pane layoutX="14.0" layoutY="8.0" prefHeight="102.0" prefWidth="326.0" style="-fx-background-radius: 30px; -fx-border-radius: 80px; -fx-background-color: #777;">
+               <children>
+                  <Label fx:id="paciente" layoutX="163.0" layoutY="33.0" text="Test">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@usuario.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Circle fill="WHITE" layoutX="1191.0" layoutY="156.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
 
 
          </children>

@@ -24,38 +24,38 @@
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="45.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu nombre" />
+            <TextField  fx:id="nombre" layoutX="45.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu nombre" />
             <Label layoutX="413.0" layoutY="139.0" text="Apellido paterno">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="413.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu apellido paterno" />
+            <TextField fx:id="apellidoP" layoutX="413.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu apellido paterno" />
             <Label layoutX="809.0" layoutY="139.0" text="Apellido materno">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="809.0" layoutY="170.0" prefWidth="278.0" promptText="Ingresa tu apellido materno" />
+            <TextField fx:id="apellidoM" layoutX="809.0" layoutY="170.0" prefWidth="278.0" promptText="Ingresa tu apellido materno" />
             <Label layoutX="45.0" layoutY="233.0" text="Fecha de nacimiento">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <DatePicker layoutX="45.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Fecha de nacimiento" />
+            <DatePicker fx:id="fechaNac" layoutX="45.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Fecha de nacimiento" />
             <Label layoutX="45.0" layoutY="342.0" text="Estatura">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <ComboBox layoutX="43.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu estatura">
+            <ComboBox fx:id="altura" layoutX="43.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu estatura">
 
                <items>
-                  <FXCollections fx:factory="observableArrayList">
-                     <Float fx:value="1.50" />
-                     <Float fx:value="1.60" />
-                     <Float fx:value="1.70" />
-                     <Float fx:value="1.80" />
+                  <FXCollections  fx:factory="observableArrayList">
+                     <String fx:value="1.50" />
+                     <String fx:value="1.60" />
+                     <String fx:value="1.70" />
+                     <String fx:value="1.80" />
                   </FXCollections>
                </items>
 
@@ -65,7 +65,7 @@
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <ComboBox layoutX="413.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el tipo de sangre">
+            <ComboBox fx:id="tipoSangre" layoutX="413.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el tipo de sangre">
                <items>
                   <FXCollections fx:factory="observableArrayList">
                      <String fx:value="O NEGATIVO" />
@@ -84,23 +84,23 @@
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="413.0" layoutY="278.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu numero de telefono" />
+            <TextField fx:id="telefono" layoutX="413.0" layoutY="278.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu numero de telefono" />
             <Label layoutX="809.0" layoutY="233.0" text="Peso">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <ComboBox layoutX="801.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu peso">
+            <ComboBox fx:id="peso" layoutX="801.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu peso">
               <items>
                  <FXCollections fx:factory="observableArrayList">
-                    <Integer fx:value="40" />
-                    <Integer fx:value="50" />
-                    <Integer fx:value="60" />
-                    <Integer fx:value="70" />
-                    <Integer fx:value="80" />
-                    <Integer fx:value="90" />
-                    <Integer fx:value="100" />
-                    <Integer fx:value="110" />
+                    <String fx:value="40" />
+                    <String fx:value="50" />
+                    <String fx:value="60" />
+                    <String fx:value="70" />
+                    <String fx:value="80" />
+                    <String fx:value="90" />
+                    <String fx:value="100" />
+                    <String fx:value="110" />
                  </FXCollections>
               </items>
             </ComboBox>

@@ -24,7 +24,7 @@ public class SymptomTree {
     }
 
     public static SymptomTree initializeTree(){
-        //hardcode -> automatizada
+
         SymptomTree root = new SymptomTree("");
         root.children.add(new SymptomTree("Fiebre, temperatura alta"));
         root.children.add(new SymptomTree("Enrojesimiento de piel, piel roja más de lo normal"));
@@ -37,8 +37,10 @@ public class SymptomTree {
         root.children.get(0).children.get(1).children.add(new SymptomTree("Deshidratación, dolor abdominal vomito y mareos"));
         root.children.get(0).children.get(1).children.add(new SymptomTree("Orina oscura, nauseas, piel amarilla y cansancio"));
         root.children.get(0).children.get(2).children.add(new SymptomTree("Infección en el oído"));
-        root.children.get(0).children.get(0).children.get(0).children.add(new SymptomTree("Resfriado Común"));
+        root.children.get(0).children.get(0).children.get(0).children.add(new SymptomTree("Resfriado común"));
         root.children.get(0).children.get(0).children.get(1).children.add(new SymptomTree("Bronquitis Aguda"));
+        root.children.get(0).children.get(1).children.get(0).children.add(new SymptomTree("Infección estomacal"));
+        root.children.get(0).children.get(1).children.get(1).children.add(new SymptomTree("Hepatitis A"));
         // second root branch
         root.children.get(1).children.add(new SymptomTree("Inflamación en el area afectada, o en una parte en especifico"));
         root.children.get(1).children.add(new SymptomTree("Picazón en todo el cuerpo y dificultad para respirar"));

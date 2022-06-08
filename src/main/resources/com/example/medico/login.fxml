@@ -27,7 +27,7 @@
                         <Font name="Lucida Sans Unicode" size="15.0" />
                      </font>
                   </Label>
-                  <Button fx:id="registerButton" onAction="#openRegister" layoutX="137.0" layoutY="636.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFF;" text="Registrarse">
+                  <Button fx:id="registerButton" layoutX="137.0" layoutY="636.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFF;" text="Registrarse">
                      <font>
                         <Font name="Lucida Sans Unicode" size="14.0" />
                      </font>
@@ -41,13 +41,18 @@
                   <Image url="@loginImage.jpg" />
                </image>
             </ImageView>
-            <TextField layoutX="835.0" layoutY="444.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu usuario" />
-            <TextField layoutX="835.0" layoutY="523.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu contraseña" />
-            <Button layoutX="852.0" layoutY="636.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Iniciar Sesión" textFill="WHITE">
+            <TextField fx:id="user_access" layoutX="835.0" layoutY="444.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu usuario" />
+            <TextField fx:id="password_access" layoutX="835.0" layoutY="523.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu contraseña" />
+            <Button fx:id="loginButton" layoutX="852.0" layoutY="636.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Iniciar Sesión" textFill="WHITE">
                <font>
                   <Font name="Lucida Sans Unicode" size="18.0" />
                </font>
             </Button>
+            <Label fx:id="login_error" layoutX="856.0" layoutY="586.0" textFill="RED">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
