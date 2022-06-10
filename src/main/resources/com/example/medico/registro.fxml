@@ -6,17 +6,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
-<VBox prefHeight="750.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
+<VBox prefHeight="665.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
    <children>
       <Pane prefHeight="752.0" prefWidth="1400.0" style="-fx-background-color: #fff;">
          <children>
-            <Pane prefHeight="101.0" prefWidth="1400.0" style="-fx-background-color: #219ebc;">
+            <Pane prefHeight="101.0" prefWidth="1100.0" style="-fx-background-color: #219ebc;">
                <children>
-                  <Label layoutX="673.0" layoutY="32.0" text="Ingresa los siguientes datos para completar el registro" textFill="WHITE">
+                  <Label layoutX="477.0" layoutY="32.0" text="Ingresa los siguientes datos para completar el registro" textFill="WHITE">
                      <font>
                         <Font name="Lucida Sans Unicode" size="23.0" />
                      </font></Label>
+                  <Button fx:id="open_login" layoutX="24.0" layoutY="26.0" mnemonicParsing="false" onAction="#openLogin" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFFF;" text="Iniciar sesión">
+                     <font>
+                        <Font name="Lucida Sans Unicode" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                </children>
             </Pane>
             <Label layoutX="45.0" layoutY="139.0" text="Nombre">
@@ -24,7 +31,7 @@
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <TextField  fx:id="nombre" layoutX="45.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu nombre" />
+            <TextField fx:id="nombre" layoutX="45.0" layoutY="170.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu nombre" />
             <Label layoutX="413.0" layoutY="139.0" text="Apellido paterno">
                <font>
                   <Font name="Marlett" size="18.0" />
@@ -51,7 +58,7 @@
             <ComboBox fx:id="altura" layoutX="43.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu estatura">
 
                <items>
-                  <FXCollections  fx:factory="observableArrayList">
+                  <FXCollections fx:factory="observableArrayList">
                      <String fx:value="1.50" />
                      <String fx:value="1.60" />
                      <String fx:value="1.70" />
@@ -90,34 +97,32 @@
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
-            <ComboBox fx:id="peso" layoutX="801.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu peso">
+            <ComboBox fx:id="peso" layoutX="809.0" layoutY="275.0" prefHeight="25.0" prefWidth="278.0" promptText="Indica el rango de tu peso">
               <items>
                  <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="20" />
                     <String fx:value="40" />
                     <String fx:value="50" />
                     <String fx:value="60" />
                     <String fx:value="70" />
                     <String fx:value="80" />
-                    <String fx:value="90" />
-                    <String fx:value="100" />
-                    <String fx:value="110" />
                  </FXCollections>
               </items>
             </ComboBox>
-            <Button fx:id="addUser" onAction="#addUser" layoutX="1158.0" layoutY="666.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Registrarse" textFill="WHITE">
+            <Button fx:id="addUser" layoutX="846.0" layoutY="593.0" mnemonicParsing="false" onAction="#addUser" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Registrarse" textFill="WHITE">
                <font>
                   <Font name="Lucida Sans Unicode" size="18.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Label  layoutX="809.0" layoutY="342.0" text="Correo electronico">
+            <Label layoutX="809.0" layoutY="342.0" text="Correo electronico">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>
             </Label>
             <TextField fx:id="correoElectronico" layoutX="809.0" layoutY="385.0" prefHeight="25.0" prefWidth="278.0" promptText="Ingresa tu correo electronico" />
-            <Label  layoutX="45.0" layoutY="454.0" text="Contraseña">
+            <Label layoutX="45.0" layoutY="454.0" text="Contraseña">
                <font>
                   <Font name="Marlett" size="18.0" />
                </font>

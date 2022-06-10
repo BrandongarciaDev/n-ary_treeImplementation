@@ -26,18 +26,18 @@
                   <Font name="Lucida Sans Unicode" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="499.0" layoutY="96.0" text="Medicamentos">
+            <Label layoutX="455.0" layoutY="96.0" text="Medicamentos">
                <font>
                   <Font name="Lucida Sans Unicode" size="22.0" />
                </font>
             </Label>
-            <ListView fx:id="medicine_view" editable="true" layoutX="403.0" layoutY="132.0" prefHeight="94.0" prefWidth="357.0" />
+            <ListView fx:id="medicine_view" editable="true" layoutX="276.0" layoutY="132.0" prefHeight="94.0" prefWidth="484.0" />
             <Label layoutX="317.0" layoutY="242.0" text="Caracteristicas">
                <font>
                   <Font name="Lucida Sans Unicode" size="22.0" />
                </font>
             </Label>
-            <TextArea layoutX="67.0" layoutY="278.0" prefHeight="156.0" prefWidth="664.0" />
+            <TextArea fx:id="caracteristicas" layoutX="67.0" layoutY="278.0" prefHeight="156.0" prefWidth="664.0" />
          </children>
       </Pane>
    </children>

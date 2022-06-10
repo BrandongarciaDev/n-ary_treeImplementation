@@ -17,9 +17,11 @@ public class DatabaseConnection {
 
     private static final String GET_PATIENT = "SELECT * FROM paciente" + " WHERE paciente_id = ?;";
 
-    private static final String GET_MEDICINE = "SELECT medicamentos.nombre, medicamentos.tipo, medicamentos.administracion FROM medicamentos, recetas, enfermedades " +
+    private static final String GET_MEDICINE = "SELECT medicamentos.nombre, medicamentos.tipo, medicamentos.administracion, medicamentos.gramaje, enfermedades.caracteristicas FROM medicamentos, recetas, enfermedades " +
             "where medicamentos.id = recetas.id_medicamento AND enfermedades.id = recetas.id_enfermedad AND " +
             "enfermedades.nombre = ?;";
+
+
 
 
     public Connection connectDatabase(String host, String port, String database, String user, String password) {
@@ -154,6 +156,8 @@ public class DatabaseConnection {
                 medicine.add(result.getString("nombre"));
                 medicine.add(result.getString("tipo"));
                 medicine.add(result.getString("administracion"));
+                medicine.add(result.getString("gramaje"));
+                medicine.add(result.getString("caracteristicas"));
                 list_medicine.add(medicine);
 
             }

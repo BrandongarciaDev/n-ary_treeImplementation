@@ -5,16 +5,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 
-public class UserAuth {
+public class UserAuth{
     @FXML
     private Button addUser;
+    private VBox boxmain;
+    public Button open_login;
     public TextField nombre;
     public TextField apellidoP;
     public TextField apellidoM;
@@ -26,7 +30,7 @@ public class UserAuth {
     public Button loginButton;
 
     public TextField user_access;
-    public TextField password_access;
+    public PasswordField password_access;
 
     public TextField correoElectronico;
     public TextField contrasena;
@@ -50,6 +54,7 @@ public class UserAuth {
         Parent root1 = (Parent) fxmlLoader.load();
         stage = new Stage();
         stage.setScene(new Scene(root1));
+        stage.setTitle(window.substring(0, window.lastIndexOf('.')));
         stage.show();
     }
 
@@ -103,5 +108,15 @@ public class UserAuth {
         UserAuth.openWindow(addUser, "login.fxml");
 
     }
+
+    @FXML
+    private void openLogin() throws IOException {
+        UserAuth.openWindow(open_login,"login.fxml");
+
+    }
+
+
+
+
 
 }

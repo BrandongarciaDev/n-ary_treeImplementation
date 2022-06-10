@@ -6,28 +6,28 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="750.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
+<VBox prefHeight="665.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medico.UserAuth">
    <children>
-      <Pane prefHeight="757.0" prefWidth="1400.0" style="-fx-background-color: #FFF;">
+      <Pane prefHeight="666.0" prefWidth="1111.0" style="-fx-background-color: #FFF;">
          <children>
-            <Pane prefHeight="756.0" prefWidth="502.0" style="-fx-background-color: #219ebc;">
+            <Pane layoutX="-11.0" prefHeight="665.0" prefWidth="407.0" style="-fx-background-color: #219ebc;">
                <children>
-                  <Label layoutX="101.0" layoutY="41.0" text="Bienvenido" textFill="WHITE">
+                  <Label layoutX="74.0" layoutY="42.0" text="Bienvenido" textFill="WHITE">
                      <font>
                         <Font name="Ebrima" size="56.0" />
                      </font>
                   </Label>
-                  <Label layoutX="60.0" layoutY="150.0" prefHeight="93.0" prefWidth="352.0" text="Obtén un diagnostico medico personalizado, donde te indicaremos que enfermedad común es la que padeces." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                  <Label layoutX="35.0" layoutY="152.0" prefHeight="93.0" prefWidth="352.0" text="Obtén un diagnostico medico personalizado, donde te indicaremos que enfermedad común es la que padeces." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
                         <Font name="Lucida Sans Unicode" size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="60.0" layoutY="321.0" prefHeight="107.0" prefWidth="217.0" text="* Diagnostico oportuno         * Receta de medicamentos     * Historial medico" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                  <Label layoutX="35.0" layoutY="325.0" prefHeight="107.0" prefWidth="217.0" text="* Diagnostico oportuno         * Receta de medicamentos     * Historial medico" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
                      <font>
                         <Font name="Lucida Sans Unicode" size="15.0" />
                      </font>
                   </Label>
-                  <Button fx:id="registerButton" layoutX="137.0" layoutY="636.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFF;" text="Registrarse">
+                  <Button fx:id="registerButton" layoutX="90.0" layoutY="576.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #FFF;" text="Registrarse">
                      <font>
                         <Font name="Lucida Sans Unicode" size="14.0" />
                      </font>
@@ -36,23 +36,41 @@
                      </cursor></Button>
 
                </children></Pane>
-            <ImageView fitHeight="442.0" fitWidth="622.0" layoutX="639.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="278.0" fitWidth="451.0" layoutX="559.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@loginImage.jpg" />
                </image>
             </ImageView>
-            <TextField fx:id="user_access" layoutX="835.0" layoutY="444.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu usuario" />
-            <TextField fx:id="password_access" layoutX="835.0" layoutY="523.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu contraseña" />
-            <Button fx:id="loginButton" layoutX="852.0" layoutY="636.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Iniciar Sesión" textFill="WHITE">
+            <TextField fx:id="user_access" layoutX="645.0" layoutY="351.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu usuario" />
+            <PasswordField fx:id="password_access" layoutX="645.0" layoutY="430.0" prefHeight="39.0" prefWidth="245.0" promptText="Ingresa tu contraseña" />
+            <Button fx:id="loginButton" layoutX="654.0" layoutY="576.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="49.0" prefWidth="228.0" style="-fx-background-color: #219ebc;" text="Iniciar Sesión" textFill="WHITE">
                <font>
                   <Font name="Lucida Sans Unicode" size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Label fx:id="login_error" layoutX="856.0" layoutY="586.0" textFill="RED">
+            <Label fx:id="login_error" layoutX="645.0" layoutY="507.0" prefHeight="21.0" prefWidth="245.0" textFill="RED">
                <font>
                   <Font name="Lucida Sans Unicode" size="12.0" />
                </font>
             </Label>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="609.0" layoutY="356.0" opacity="0.76" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@usuario_login.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="609.0" layoutY="437.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bloquear.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="192.0" layoutX="890.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
